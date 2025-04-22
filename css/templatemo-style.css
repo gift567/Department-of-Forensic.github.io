@@ -26,6 +26,7 @@ https://templatemo.com/tm-516-known
 
   .navbar-brand img{
     height: 15vh;
+    margin-bottom: 2vh;
   }
 
 /* start about */
@@ -613,6 +614,10 @@ https://templatemo.com/tm-516-known
   .custom-navbar .navbar-toggle .icon-bar {
     background: #252525;
     border-color: transparent;
+  }
+
+  .navbar-collapse{
+    background-color: #fff;
   }
 
 
