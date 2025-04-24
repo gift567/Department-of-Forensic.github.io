@@ -99,6 +99,19 @@ https://templatemo.com/tm-516-known
 
 
 /* start divider */
+
+
+#about-divider
+    {
+        background: url('../images/finger.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        color: #FFFFFF;
+        margin-top: 50vh;
+        height: 50vh;
+       
+    }
 #divider
     {
         background: url('../images/c1.jpg');
@@ -265,12 +278,171 @@ https://templatemo.com/tm-516-known
 
 
 
+.tabs-container {
+  max-width: 900px;
+  margin: auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.tab-buttons {
+  display: flex;
+  background: rgb(0, 0, 0);
+}
+
+.tab-button {
+  flex: 1;
+  padding: 15px;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.tab-button:hover, .tab-button.active {
+  background: red;
+}
+
+.tab-content {
+  display: none;
+  padding: 30px;
+  animation: fadeIn 0.5s ease;
+}
+
+.tab-content.active {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.tab-content img {
+  max-width: 350px;
+  width: 100%;
+  border-radius: 1px;
+  height: 42vh;
+}
+
+.tab-text {
+  flex: 1;
+
+}
+
+.tab-text h3 {
+  margin-top: 0;
+  color: #003366;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@media (max-width: 768px) {
+  .tab-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+
+
+/* More Info */
+
+.more-info {
+	margin-top: 140px;
+}
+
+.more-info .left-image img {
+	width: 100%;
+	overflow: hidden;
+}
+
+.more-info .more-info-content {
+	background-color: #f7f7f7;
+}
+
+.about-info .more-info-content {
+	background-color: transparent;
+}
+
+.about-info .right-content {
+	padding: 0px!important;
+	margin-right: 30px;
+}
+
+.more-info .right-content {
+	padding: 45px 45px 45px 30px;
+}
+
+.more-info .right-content span {
+	text-transform: uppercase;
+	font-size: 15px;
+	color: #666;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+	display: block;
+}
+
+.more-info .right-content h2 {
+	font-size: 36px;
+	font-weight: 600;
+	margin-bottom: 35px;
+}
+
+.more-info .right-content em {
+	font-style: normal;
+	color: red;
+}
+
+.more-info .right-content p {
+	margin-bottom: 30px;
+}
 
 
 
 
+/* team */
 
+.team {
+	background-color: #f7f7f7;
+	margin-top: 140px;
+	margin-bottom: -140px;
+	padding: 120px 0px;
+}
 
+.team-item img {
+	width: 100%;
+	overflow: hidden;
+}
+
+.team-item .down-content {
+	background-color: #fff;
+	padding: 30px;
+}
+
+.team-item .down-content h4 {
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: 0.25px;
+	margin-bottom: 10px;
+}
+
+.team-item .down-content span {
+	color: #a4c639;
+	font-weight: 600;
+	font-size: 14px;
+	display: block;
+	margin-bottom: 15px;
+}
+
+.team-item .down-content p {
+	margin-bottom: 20px;
+}
 
 
 
@@ -298,6 +470,9 @@ https://templatemo.com/tm-516-known
 
 
   /* end of additional code by gift kateule */
+
+
+
 
   /*---------------------------------------
      TYPOGRAPHY              

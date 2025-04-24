@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mission, Vision & Core Values</title>
+  <style>
+
+
+    .tabs-container {
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    .tab-buttons {
+      display: flex;
+      background: #003366;
+    }
+
+    .tab-button {
+      flex: 1;
+      padding: 15px;
+      cursor: pointer;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .tab-button:hover, .tab-button.active {
+      background: #00509e;
+    }
+
+    .tab-content {
+      display: none;
+      padding: 30px;
+      animation: fadeIn 0.5s ease;
+    }
+
+    .tab-content.active {
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .tab-content img {
+      max-width: 300px;
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .tab-text {
+      flex: 1;
+    }
+
+    .tab-text h3 {
+      margin-top: 0;
+      color: #003366;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    @media (max-width: 768px) {
+      .tab-content {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="tabs-container">
+  <div class="tab-buttons">
+    <div class="tab-button active" onclick="showTab(0)">Mission</div>
+    <div class="tab-button" onclick="showTab(1)">Vision</div>
+    <div class="tab-button" onclick="showTab(2)">Core Values</div>
+  </div>
+
+  <div class="tab-content active">
+    <img src="https://via.placeholder.com/300x200?text=Mission" alt="Mission Image">
+    <div class="tab-text">
+      <h3>Our Mission</h3>
+      <p>To provide timely, professional, and scientifically accurate forensic pathology services that support the justice system and promote public health and safety in Zambia.</p>
+    </div>
+  </div>
+
+  <div class="tab-content">
+    <img src="https://via.placeholder.com/300x200?text=Vision" alt="Vision Image">
+    <div class="tab-text">
+      <h3>Our Vision</h3>
+      <p>To be a leading forensic institution in Africa, recognized for excellence in medico-legal investigations and trusted by all sectors of society.</p>
+    </div>
+  </div>
+
+  <div class="tab-content">
+    <img src="https://via.placeholder.com/300x200?text=Values" alt="Core Values Image">
+    <div class="tab-text">
+      <h3>Our Core Values</h3>
+      <p>Integrity, impartiality, scientific rigor, confidentiality, professionalism, and respect for human dignity in every examination and report we deliver.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  function showTab(index) {
+    const tabs = document.querySelectorAll('.tab-content');
+    const buttons = document.querySelectorAll('.tab-button');
+    tabs.forEach((tab, i) => {
+      tab.classList.toggle('active', i === index);
+      buttons[i].classList.toggle('active', i === index);
+    });
+  }
+</script>
+
+</body>
+</html>
