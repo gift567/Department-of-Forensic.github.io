@@ -544,6 +544,28 @@ https://templatemo.com/tm-516-known
 }
 
 
+/*---------------------------------------
+   About section              
+-----------------------------------------*/
+
+#about .col-md-6 {
+  padding-top: 22px;
+  padding-bottom: 32px;
+}
+
+#about .col-md-6 img {
+  padding: 22px 0px 22px 22px;
+}
+
+#about .col-md-4 {
+  padding-bottom: 32px;
+}
+
+#about .col-md-4 img {
+  padding-top: 12px;
+}
+
+
 
 
 
